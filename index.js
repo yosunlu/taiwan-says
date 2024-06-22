@@ -15,10 +15,12 @@ app.use(express.json()); // Correct middleware config
 // routes
 app.use('/api/entries', entryRoute)
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => console.log('Connected to MongoDB!'))
+  .catch((error) => console.error('Connection failed:', error));
 

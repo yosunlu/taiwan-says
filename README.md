@@ -23,6 +23,6 @@ Hopefully I can expand this tiny project to a full application in the future.
 Basic CRUD operations. The base URL is [`https://taiwan-says-server.onrender.com`]
 
 **Deployment**
-- I deployed mongoDB with Render webservices, which is really easy to use. Highly reccommended
+I deployed mongoDB with Render webservices, which is really easy to use. Highly reccommended.
 
 

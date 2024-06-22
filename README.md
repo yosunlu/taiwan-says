@@ -10,8 +10,11 @@ Hopefully I can expand this tiny project to a full application in the future.
 ## Technologies used
 
 👽 Frontend: plain Javascript, html, css 
+
 👽 Backend: Node.js Express.js  
+
 👽 Database: MongoDB 
+
 👽 Cloud Services: Render
 
 ### Architecture

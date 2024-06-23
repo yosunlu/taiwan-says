@@ -1,3 +1,4 @@
+// Creates the shema for entry
 const mongoose = require('mongoose')
 const EntrySchema = mongoose.Schema(
     {

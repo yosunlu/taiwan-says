@@ -1,9 +1,11 @@
 const Entry = require('../models/entry.model')
 
+// Get all entries
 const getEntries = async (req, res) => {
     try {
+        // find all entries and return
         const entries = await Entry.find({});
-        res.status(200).json(entries)
+        // res.status(200).json(entries)
     } catch (error) {
         console.error('Error creating entry:', error); // Log the error
         res.status(500).json({ message: error.message });
@@ -13,7 +15,7 @@ const getEntries = async (req, res) => {
 // Add an entry
 const addEntry = async (req, res) => {
     try {
-        console.log('Request body:', req.body); // Log request body
+        // console.log('Request body:', req.body); // Log request body
         const entry = await Entry.create(req.body);
         res.status(200).json({ message: 'entry created successfully' });
     } catch (error) {
@@ -25,7 +27,7 @@ const addEntry = async (req, res) => {
 // update API
 const updateEntry =  async (req, res) => {
     try {
-        const { id } = req.params; // Correct typo
+        const { id } = req.params;
         const updateData = req.body; // Get update data from the request body
         const entry = await Entry.findByIdAndUpdate(id, updateData, { new: true }); // Pass update data and use the 'new' option to return the updated document
 

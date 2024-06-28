@@ -11,7 +11,7 @@ Hopefully I can expand this tiny project to a full application in the future.
 
 👽 Frontend: plain Javascript, html, css 
 
-👽 Backend: Node.js Express.js  
+👽 Backend: Node.js, Express.js  
 
 👽 Database: MongoDB 
 
@@ -19,8 +19,8 @@ Hopefully I can expand this tiny project to a full application in the future.
 
 ### Architecture
 
-**APIs**
-Basic CRUD operations. The base URL is [`https://taiwan-says-server.onrender.com`]
+**APIs**  
+Basic CRUD operations. 
 
 **Deployment**  
 I deployed mongoDB with Render webservices, which is really easy to use. Highly reccommended.  

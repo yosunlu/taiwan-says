@@ -32,6 +32,8 @@ ref: https://www.youtube.com/watch?v=_7UQPve99r4&t=3601s
 **Issues when fetching**
 - Try running the endpoints locally first. If there's issue running locally, check MongoDB atlas configs.
   MongoDB URI can be found in render's environment setting. Replace mongoose.connect(process.env.MONGODB_URI) in 'index.js' with the string
+  ![截圖 2024-06-30 下午6 25 18](https://github.com/yosunlu/taiwan-says/assets/104919684/bf436259-c230-45ea-9b57-1380e1dce432)
+
 - If able to run locally, try re-deploy it on render: https://dashboard.render.com/.
 - If still not working, delete the web service on render and create a new one.
 

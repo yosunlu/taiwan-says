@@ -9,7 +9,11 @@ const dotenv = require('dotenv');
 dotenv.config(); 
 
 // middleware
-app.use(cors()); // Enable CORS
+const corsOptions = {
+  origin: 'https://yosunlu.github.io', // Allow requests from this origin
+  optionsSuccessStatus: 200 // For legacy browser support
+};
+app.use(cors(corsOptions)); // Enable CORS with specific options
 app.use(express.json()); // Correct middleware config
 
 // routes

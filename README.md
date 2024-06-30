@@ -11,7 +11,7 @@ Frontend code are in ./docs.
 
 ## Technologies used
 
-👽 Frontend: plain Javascript, html, css 
+👽 Frontend: plain JavaScript, HTML, CSS 
 
 👽 Backend: Node.js, Express.js  
 

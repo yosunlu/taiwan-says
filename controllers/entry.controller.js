@@ -5,7 +5,7 @@ const getEntries = async (req, res) => {
     try {
         // find all entries and return
         const entries = await Entry.find({});
-        // res.status(200).json(entries)
+        res.status(200).json(entries)
     } catch (error) {
         console.error('Error creating entry:', error); // Log the error
         res.status(500).json({ message: error.message });

@@ -7,6 +7,8 @@ This is a mini-full stack project I use to learn mongoDB. The frontend code, whi
 The user can enter any quotes that he finds to be funny/trolling/useful translation of English usages. Once the user submits, the sentence will be stored to mongoDB.
 Hopefully I can expand this tiny project to a full application in the future. 
 
+Frontend code are in ./docs.
+
 ## Technologies used
 
 👽 Frontend: plain Javascript, html, css 
@@ -26,5 +28,12 @@ Basic CRUD operations.
 I deployed mongoDB with Render webservices, which is really easy to use. Highly reccommended.  
 
 ref: https://www.youtube.com/watch?v=_7UQPve99r4&t=3601s
+
+** Issues when fetching **
+- Try running the endpoints locally first. If there's issue running locally, check MongoDB atlas configs.
+  MongoDB URI can be found in render's environment setting. Replace mongoose.connect(process.env.MONGODB_URI) in 'index.js' with the string
+- If able to run locally, try re-deploy it on render: https://dashboard.render.com/.
+- If still not working, delete the web service on render and create a new one.
+
 
 
